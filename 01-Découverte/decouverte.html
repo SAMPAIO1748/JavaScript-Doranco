@@ -255,7 +255,61 @@ let chiffre2 = 56,
     chiffre3 = 24;
 
 let resultat5 = chiffre2 - chiffre3;
-document.write(resultat5 + "<br>"); // 32 
+document.write(resultat5 + "<br>"); // 32
+
+// ------------------------------------------------------------------------------------------------------------
+// -- 8 -- Conditions
+// ------------------------------------------------------------------------------------------------------------
+document.write('<h2>Conditions et opérateurs de comparaison de logique</h2>');
+
+let a = 10,
+    b = 5,
+    c = 2;
+
+    // If
+if(a > b) // si a est strictement supérieur à b
+{
+    document.write('Le chiffre a est plus grand que le chiffre b. <br>');
+}
+
+//If/Else
+if( c > b) // si c est strictement supérieur à b
+{
+    document.write('Le chiffre c est plus grand que le chiffre b. <br>');
+}
+else // sinon
+{
+    document.write('Le chiffre c n\'est pas plus grand que le chiffre b.<br>');
+}
+
+// If avec AND
+if( a > b && b > c) // Si a est strictement supérieur à b ET que b est strictememnt supérieur à c.
+{
+    document.write('Les deux conditions sont réunies.<br>');
+}
+
+//If avec OR.
+if( a == 9 || b > c) // Si a est égale à 9 ou si b est supérieur à c
+{
+    document.write("L'une des deux conditions est respectées. <br>");
+}
+
+// If/Else If/Else
+if(a == 8) // Si a est égale à 8
+{
+    document.write("1 - a est égale à 8.<br>");
+}
+else if( a != 10) // Sinon Si a est différent de 10
+{
+    document.write("2 - a est différent de 10.<br>");
+}
+else // Sinon, c'est que je ne suis ni dans le if ni dans le elseif, je me retrouve dans le else.
+{
+    document.write("3 - Tout le monde a faux.<br>");
+}
+
+
+
 
 
 
