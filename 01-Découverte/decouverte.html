@@ -188,6 +188,30 @@ document.write('<br>');
         let maVariable;
         document.write(typeof(maVariable));// affichera undefined car elle est déclarée mais pas affectée.
 
+// ------------------------------------------------------------------------------------------------------------
+// -- 5 -- CONSTANTES
+// ------------------------------------------------------------------------------------------------------------
+document.write('<h2>Les constantes</h2>');
+// les contraintes sont des boîtes dont la valeur NE PEUT ETRE MODIFIEE, autrememtn dit : dont la valeur est constante.
+
+const BOUGE_PAS = "Ma constante impossible à modifier";
+document.write(BOUGE_PAS);
+document.write("<br>");
+
+        //BOUGE_PAS = "nouvelle valeur ? impossible"; // affichera dans la console -> TypeError : assignment of constant variable.
+
+        // const BOUGE_PAS = "autre valeur"; // impossible aussi -> SyntaxError : la constante a déjà été déclarée.
+
+        // let BOUGE_PAS = "encore une autre valeur"; // impossible aussi -> SyntaxError : la constante a déjà été déclarée.
+
+        // IMPORTANT : le mot clé "const" n'est pas compatible avec tous les navigateurs. Donc les développeurs utilisent la métode suivante :
+        // déclarer une variable dont le nom complet est en majuscule.
+        // Exemple :
+        var NE_PAS_MODIFIER = "ma variable ne doit pas être modifiée";
+        // Si le mot clé var ou let est utilisé et que le nom de la variable est ne majuscule et qu'il contient UNDERSCORE _ alors cela
+        // indique aux développeurs que la variable ne doit pas être modifiée.
+
+
 
     </script>
     
