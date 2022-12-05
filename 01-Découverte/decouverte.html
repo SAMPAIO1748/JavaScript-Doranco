@@ -175,6 +175,19 @@ document.write('<br>');
 
         document.write(typeof(choix));
 
+        document.write("<br>");
+
+        document.write(Boolean(numero)); // renvoie true si la variable est affectée (par autre chose que par false ou 0) et déclarée.
+        // Si la variable n'existe pas ou n'a pas de valeur alors Boolean() renvoie false.
+
+
+        document.write("<br>");
+
+        //document.write(typeof(maVariable)); // affichera undefined si une variable n'est pas déclarée ou n'a pas de valeur affectée.
+        document.write("<br>");
+        let maVariable;
+        document.write(typeof(maVariable));// affichera undefined car elle est déclarée mais pas affectée.
+
 
     </script>
     
