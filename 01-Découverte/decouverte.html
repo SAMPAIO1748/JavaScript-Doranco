@@ -308,6 +308,37 @@ else // Sinon, c'est que je ne suis ni dans le if ni dans le elseif, je me retro
     document.write("3 - Tout le monde a faux.<br>");
 }
 
+// if avec l'opérateur négation !
+var test = 3 < 1; // test est un booleén qui renvoie false
+console.log(test);
+if (!test) // ! est l'opérateur NOT, qui veut dire "inverse la valeur du boolean"
+{
+    console.log(!test);
+    document.write("Je teste le contraire du test.<br>"); 
+}
+
+// if avec opérateur comparaison == et ===
+let vara = 1,
+    varb = "1";
+if(vara == varb)
+{
+    document.write('les deux variables sont égales.<br>');
+}
+
+if(vara === varb)
+{
+    document.write("les deux variables sont égales et de même type.<br>")
+}
+
+// Condition ternaire.
+let voiture = "ford";
+document.write((voiture == "twingo") ? 'jolie<br>' : 'moche<br>');
+
+//isNaN
+if(!isNaN(varb))
+{
+    document.write("varb n'est pas un number ou nombre (Not a Number - NaN)");
+}
 
 
 
