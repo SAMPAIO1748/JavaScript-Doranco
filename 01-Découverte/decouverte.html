@@ -388,7 +388,7 @@ else
 // ------------------------------------------------------------------------------------------------------------
 document.write("<h2>Condition Switch</h2>")
 
-let couleur = prompt("Quelle est votre couleur préférée ?");
+//let couleur = prompt("Quelle est votre couleur préférée ?");
 
     /*switch(couleur){ // j'indique la variable que je vais tester dans mon switch
 
@@ -414,7 +414,7 @@ let couleur = prompt("Quelle est votre couleur préférée ?");
 
 
     // Exercice : Réécrire le switch avec des if et des else.
-
+/*
         if(couleur == "rose")
         {
             alert('Tu aimes le rose');
@@ -430,7 +430,7 @@ let couleur = prompt("Quelle est votre couleur préférée ?");
         {
             alert("Ta couleur n'existe pas dans la liste");
         }
-
+*/
 
         // Exercice : 
 
@@ -451,6 +451,41 @@ let couleur = prompt("Quelle est votre couleur préférée ?");
          * sinon on envoie dommage que vous n'ayez pas d'audi, de bmw ou de mercedes.
          *  
          * */
+
+         // Correction :
+
+        /* let emailUser = prompt("Saisissez votre email");
+         let mdpUser = prompt("Saisissez votre mot de passe");
+
+         if(emailUser == email && mdpUser == mdp)
+         {
+            alert("Vous êtes connecté.");
+         }else{
+            alert("Vos identifiants sont incorrects.");
+         }
+*/
+         let car = prompt("Donnez la marque de votre voiture");
+
+         
+
+         switch(car)
+         {
+            case 'audi': 
+                alert("Très jolie voiture");
+            break;
+
+            case "bmw":
+                alert("Super voiture");
+            break;
+
+            case "mercedes": 
+                alert("Voiture géniale");
+            break;
+
+            default: 
+                alert("Dommage, vous n'avez pas ni audi, ni bmw ni mercedes");
+            break;
+         }
 
 
 
