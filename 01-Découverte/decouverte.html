@@ -649,6 +649,8 @@ document.write("<h2>Les fonctions prédéfinies</h2>");
     // Exécution de la function
     maFonction2();
 
+    console.log(maBoite);
+
     // Fonction fléchée
     let hello = () => {
         document.write("Hello ! <br>");
@@ -698,12 +700,58 @@ document.write("<h2>Les fonctions prédéfinies</h2>");
         if(temperature > 1 || temperature < -1){
             term = " degrés";
         }
-        document.write("Nous sommes " + art + saison + " et il fait " + temperature + term);
-
+        //document.write("Nous sommes " , art , saison , " et il fait " , temperature , term , "."); concaténation avec virgule
+        document.write("Nous sommes " + art + saison + " et il fait " + temperature + term + ".");
     }
 
-    exometeo("printemps", 15);
+    exometeo("été", 25);
 
+// ------------------------------------------------------------------------------------------------------------
+// -- 13 -- Les tableaux
+// ------------------------------------------------------------------------------------------------------------
+document.write("<h2>Les tableaux</h2>");
+
+let fruits = ['Banane', "Orange", 'Pomme', "Mango"];
+console.log(fruits);
+
+let monTableau = ['Emilie', "Magalie", "Eric", "José", 42, 789]; // Déclaration et affectation en même temps (version la plus utilisée)
+document.write(monTableau); // affiche la totalité d'un tableau
+document.write('<br>');
+document.write(monTableau[0]); // affiche un élément en particulier : Emilie
+document.write('<br>');
+document.write(monTableau[2]);// affiche un élément en particulier : Eric
+
+// Remplacement de José par Rafael
+monTableau[3] = "Rafael";
+document.write('<br>');
+document.write(monTableau[3]);
+
+console.log(monTableau);
+
+console.log(monTableau.length);
+
+let monSuperTableau = [
+    'Winry Rockbell', 
+    'Alphonse Elric', 
+    'Edward Elric', 
+    'Roy Mustang', 
+    'Riza Hawkeye', 
+    'King Bradley', 
+    'Alex Louis Amstrong', 
+    'Van Hohenheim', 
+    126, 
+    568, 
+    true, 
+    false];
+
+    document.write("<br>");
+
+let max = monSuperTableau.length; // nosu stockons le nombre d'index dans une variable
+
+for(let i = 0; i < max; i++)
+{
+    document.write(monSuperTableau[i] + "-----");
+}
 
 
 
