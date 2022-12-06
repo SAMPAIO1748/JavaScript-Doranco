@@ -552,7 +552,7 @@ for(let k = 0; k <= 12; k++){// initialisation; condition; incrémentation
 
 document.write("<br>");
 
-document.write("<table border=5 stye='border-color: black;'>");
+document.write("<table border=2 style='border-color: black;'>");
 for(var l = 1; l <= 100; l+= 10 ){
     document.write("<tr>");
     for( let n = l;  n <= l+9; n++){
@@ -562,6 +562,81 @@ for(var l = 1; l <= 100; l+= 10 ){
 }
 
 document.write("</table>");
+
+
+// Boucle Do While
+document.write('<h2>La Boucle Do While</h2>');
+let o = 2;
+
+do{
+    document.write("<p>Ce code s'execute une seule fois car le condition n'est jamais respectée.</p>");// ce code s'éxécute une première fois
+    // sans se soucier de vérifier la condition
+    document.write("<p> La valeur de o est : " + o + "</p>");
+}while(o > 5);// Le code écrit dans le do ne s'éxécute ensuite que si la condition est respectée.
+
+
+// ------------------------------------------------------------------------------------------------------------
+// -- 11 -- Les fonctions prédéfinies
+// ------------------------------------------------------------------------------------------------------------
+document.write("<h2>Les fonctions prédéfinies</h2>");
+
+/* Comme dans tous langage de programmation, JS possède des fonctions.
+    Les fonctions sont des morceaux de codes encapsulés qu'on appelle ensuite en de besoin pour éxécuter une action précise.
+    On distingue deux types de fonctions : les fonctions prédéfinies (qui existent dans JS) et les fonctions utilisateurs
+    (fonctions créées par les utilisateurs/développeurs d'un site).
+*/
+
+    // Déclaration d'une variable
+    let phrase = "Salut, je suis Roger";
+    document.write(phrase + "<br>");
+    // Cette variable contient du texte. C'est en fait un objet String. Elle possède plusieurs fonctions et une propriété.
+
+    //indexOf
+    document.write("Roger se trouve à la position : " + phrase.indexOf('Roger') + "<br>");
+    // La méthode indxOf retourne la position de la 1ère lettre de "Roger" dans la phrase
+    // (le décompte commence à 0).
+    // arguments = paramètres = parameters (anglais) : tout ce qui se trouve à l'interieur des () d'une fonction.
+
+    // substr
+    let phrase1 = "Bonjour Pierre, comment vas-tu ?";
+    let decoupe = phrase1.substr(8, 6); // la fonction "substr" permet de récupérer un morceau de la chîne de caractères.
+    // 1er argument : où commence la découpe, 2ème argument : de combien de caractères.
+    document.write(decoupe + "<br>"); // Pierre
+
+    // substring
+    let decoupe2 = phrase1.substring(8, 14); // Fait la même chose que substr() sauf que le 2ème argument est la position d'arrêt.
+    document.write(decoupe2 + "<br>");// Pierre
+    document.write("Bonjour Roberd comment vas-tu ?".substring(8, 14) + "<br>" );
+
+    // Divers : valueOf + toLowerCase + toUpperCase
+    document.write(phrase.valueOf() + "<br>"); // valueOf() retourne la valeur de la variable "phrase". Elle n'a pas besoin d'arguments.
+    document.write(phrase.toLowerCase() + "<br>"); // passe tout en minuscule
+    document.write(phrase.toUpperCase() + "<br>"); // passe tout en majuscule
+    document.write(phrase.length + "<br>");// Ce n'est pas une fonction mais une propriété de la variable donc elle ne demande par de paranthèse;
+    //elle permet d'obtenir la longeur d'une chaîne de caractères.
+
+    /*
+        Pour trouver les fonctions prédéfinis de JavaScript il faut utiliser le documentation !!!!!
+        Exemple : https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Functions
+    */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     </script>
     
