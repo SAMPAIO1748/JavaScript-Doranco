@@ -689,6 +689,22 @@ document.write("<h2>Les fonctions prédéfinies</h2>");
     // Exercice : dans un fonction exometeo faire en sorte que degré s'écrive avec un s au pluriel et sans s au singulier
     // et penser aux articles ("au" printemps, "en" hiver).
 
+    const exometeo = (saison, temperature) => {
+        let art = "en ";
+        let term = " degré";
+        if (saison === "printemps") {
+            art = "au ";
+        }
+        if(temperature > 1 || temperature < -1){
+            term = " degrés";
+        }
+        document.write("Nous sommes " + art + saison + " et il fait " + temperature + term);
+
+    }
+
+    exometeo("printemps", 15);
+
+
 
 
 
