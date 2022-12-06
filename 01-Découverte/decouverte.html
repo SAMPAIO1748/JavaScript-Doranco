@@ -621,6 +621,73 @@ document.write("<h2>Les fonctions prédéfinies</h2>");
     */
 
 
+// ------------------------------------------------------------------------------------------------------------
+// -- 12 -- Les fonctions utilisateurs
+// ------------------------------------------------------------------------------------------------------------
+/* "Don't Repeat Yourself Dry"
+    Principe philisophique de la programmation : ne pas répéter son travail.
+    A chaque qu'on répète une action, c'est qu'on peut créer une fonction utilisateur et ainsi on évite la répétition du code l'action
+*/
+    document.write("<h2>Les fonctions utilisateurs</h2>");
+    
+    
+
+    // la manière appelée FUNCTION STATEMENT (déclaration de fonction)
+    function maFonction () { // par convention : espace après function avant l'ouverture d'une parenthèse
+        // ici le code à éxécuter 
+        return document.write("<p>Il fait très froid aujourd'hui</p>");
+    }
+
+    // Exécution de la fonction
+    maFonction();
+
+    // La manière appelée FUNCTION OPERATOR (opérateur de fonction)
+    let maFonction2 = function () {
+        return document.write("<p>Il y a beaucoup de vent</p>");
+    }
+
+    // Exécution de la function
+    maFonction2();
+
+    // Fonction fléchée
+    let hello = () => {
+        document.write("Hello ! <br>");
+    }
+
+    const goodBye = () => {
+        document.write("Good Bye ! <br>");
+    }
+
+    hello();
+    goodBye();
+
+    // Fonctions qui a besoin d'arguments
+    function direBonjour (prenom) {
+        var message = document.write("<p>Bonjour " + prenom + '. Comment vas-u ?</p>');
+        return message;
+    }
+    
+
+    direBonjour("Rolland");
+
+    const direAuRevoir = (prenom) => {
+        document.write("<p>Au revoir " + prenom + " . A bientôt.</p>");
+    }
+
+    direAuRevoir("Valéry Giscard d'Estaing");
+
+    /* Par convention nous déclarons toujours une fonction AVANT de l'éxécuter, cependant si nous déclarons une fonction APRES l'avoir
+    éxécutée le code ne focntionnera que si la déclaration s'est faite de manière directe (sans le let ou le var our le const);
+    */ 
+
+    function meteo (saison, temperature) {
+        return document.write('Nous sommes en ' + saison + " et il fait " + temperature + " degré(s)");
+    }
+
+    meteo("automne", 10);
+
+
+
 
 
 
