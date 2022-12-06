@@ -464,30 +464,43 @@ document.write("<h2>Condition Switch</h2>")
             alert("Vos identifiants sont incorrects.");
          }
 */
-         let car = prompt("Donnez la marque de votre voiture");
+        // let car = prompt("Donnez la marque de votre voiture");
 
-         
+         let car = "audi"
 
          switch(car)
          {
             case 'audi': 
-                alert("Très jolie voiture");
+               // alert("Très jolie voiture");
+               document.write("Très jolie voiture");
             break;
 
             case "bmw":
-                alert("Super voiture");
+                //alert("Super voiture");
+                document.write("Super voiture");
             break;
 
             case "mercedes": 
-                alert("Voiture géniale");
+                //alert("Voiture géniale");
+                document.write("Voiture géniale");
             break;
 
             default: 
-                alert("Dommage, vous n'avez pas ni audi, ni bmw ni mercedes");
+                //alert("Dommage, vous n'avez pas ni audi, ni bmw ni mercedes");
             break;
          }
+// ------------------------------------------------------------------------------------------------------------
+// -- 10 -- Les boucles
+// ------------------------------------------------------------------------------------------------------------
+// Boucle While
+document.write("<h2>La Boucle While (tant que)</h2>");
 
-
+let i = 0; // on initialise une varibale à 0
+while(i <= 17) // la condition de la boucle : "tant que i <= 5"
+{
+    document.write(i + "---");// les instructions qui devront être executées tant que la condition est vrai.
+    i++; // équivaut à i += 1
+}
 
 
     </script>
