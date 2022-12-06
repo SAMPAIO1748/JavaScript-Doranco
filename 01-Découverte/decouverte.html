@@ -333,6 +333,20 @@ if(vara === varb)
 // Condition ternaire.
 let voiture = "ford";
 document.write((voiture == "twingo") ? 'jolie<br>' : 'moche<br>');
+/*
+
+    Traduction de la condition ternaire :
+    if(voiture == "twingo")
+    {
+        document.write('jolie<br>');
+    }
+    else
+    {
+        document.write('moche<br>');
+    }
+    
+
+*/
 
 //isNaN
 if(!isNaN(varb))
@@ -368,8 +382,34 @@ else
 */
 
 
+    
+// ------------------------------------------------------------------------------------------------------------
+// -- 9 -- Condition SWITCH
+// ------------------------------------------------------------------------------------------------------------
+document.write("<h2>Condition Switch</h2>")
 
+let couleur = prompt("Quelle est votre couleur préférée ?")
 
+    switch(couleur){ // j'indique la variable que je vais tester dans mon switch
+
+            case 'rose' : // on n'oublie pas les deux points
+                alert('tu aimes le rose'); // les instructions qui doivent s'appliquer si on rentre dans ce cas.
+                
+            break; // On utilise Break pour indiquer qu'on a fini les instrcuitions dans ce cas
+
+            case 'violet' :
+                alert('tu aimes le violet');
+            break; // A la fin de chaque cas, après le break on met un ;
+
+            case 'orange' :
+                alert('tu aimes le orange');
+            break;
+
+            default : // la réponse si la variable n'entre dans aucun cas
+                    alert("Dommage, ta couleur n'est pas dans la liste");
+            break;        
+
+    }
 
     </script>
     
