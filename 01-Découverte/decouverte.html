@@ -388,9 +388,9 @@ else
 // ------------------------------------------------------------------------------------------------------------
 document.write("<h2>Condition Switch</h2>")
 
-let couleur = prompt("Quelle est votre couleur préférée ?")
+let couleur = prompt("Quelle est votre couleur préférée ?");
 
-    switch(couleur){ // j'indique la variable que je vais tester dans mon switch
+    /*switch(couleur){ // j'indique la variable que je vais tester dans mon switch
 
             case 'rose' : // on n'oublie pas les deux points
                 alert('tu aimes le rose'); // les instructions qui doivent s'appliquer si on rentre dans ce cas.
@@ -410,6 +410,26 @@ let couleur = prompt("Quelle est votre couleur préférée ?")
             break;        
 
     }
+    */
+
+
+    // Exercice : Réécrire le switch avec des if et des else.
+
+        if(couleur == "rose")
+        {
+            alert('Tu aimes le rose');
+        }else if(couleur == "violet")
+        {
+            alert('Tu aimes le violet');
+        }
+        else if(couleur == "orange")
+        {
+            alert("Tu aimes le orange");
+        }
+        else
+        {
+            alert("Ta couleur n'existe pas dans la liste");
+        }
 
     </script>
     
