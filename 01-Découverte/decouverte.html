@@ -530,7 +530,7 @@ while(j <= 17){
 
 document.write("<br>");
 
-let color = prompt("Veuillez saisir une couleur ou écrivez stop");
+/*let color = prompt("Veuillez saisir une couleur ou écrivez stop");
 let stock = "";
 
 while(color != "stop")
@@ -540,6 +540,29 @@ while(color != "stop")
     color = prompt('Veuillez saisir une couleur ou écrivez stop');
 }
 document.write("Liste des couleurs : " + stock);
+
+*/
+
+// Boucle For
+document.write("<h2>La Boucle For</h2>");
+
+for(let k = 0; k <= 12; k++){// initialisation; condition; incrémentation
+    document.write(k + "/");// instructions
+}
+
+document.write("<br>");
+
+document.write("<table border=5 stye='border-color: black;'>");
+for(var l = 1; l <= 100; l+= 10 ){
+    document.write("<tr>");
+    for( let n = l;  n <= l+9; n++){
+        document.write('<td>' + n + '</td>');
+    }
+    document.write('</tr>');
+}
+
+document.write("</table>");
+
     </script>
     
 </body>
