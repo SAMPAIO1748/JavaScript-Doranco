@@ -892,16 +892,54 @@ let maVoiture = { // je créée et je remplie mon objet
     }
 }
 
+document.write(maVoiture.marque + "<br>"); // Nous retiendrons cette écrire pour l'accés à l'information d'un objet (et non maVoiture['marque'])
+
 maVoiture.infos();
 
+document.write(maVoiture.couleur + "<br>");
 
+maVoiture.changeDeCouleur("Bleu"); // accés à une fonction de mon objet, qui me permet ici de changer la couleur de la voiture
 
+document.write(maVoiture.couleur + "<br>");
 
+maVoiture.infos();
 
+document.write(maVoiture.motorisation.puissance + "<br>");
 
+// La Boucle FOR IN
+document.write("<strong>La boucle FOR IN</strong><br>");
 
+for( let monElement in maVoiture) { // Syntaxe pour récupérer les noms des éléments (propriétés et méthodes) de notre objet
+    document.write(monElement + "<br>");
+}
 
+document.write("<hr>");
 
+for(let monElement in maVoiture){ // Syntaxe pour récupérer les valeurs des éléments de l'objet
+    document.write(maVoiture[monElement] + "<br>");
+}
+
+// ------------------------------------------------------------------------------------------------------------
+// -- 15 -- THIS
+// ------------------------------------------------------------------------------------------------------------
+document.write("<h2>THIS</h2>");
+
+// Les classes en JavaScript n'existe pas. Nous pouvons par contre créer des fonctions qui vont fabriquer des objets.
+// Comme le ferait une classe en PHP. Une fonction qui fabrique des objets on l'appelle un constructeur.
+
+function Animal(nom, espece, categorie, age){// un constructeur a TOUJOURS sa première lettre en MAJUSCULE
+    this.nom = nom,
+    this.espece = espece,
+    this.categorie = categorie,
+    this.age = age,
+    this.changeAge = function(nouvelAge) {
+        this.age = nouvelAge;
+        return this.age;
+    }
+}
+
+let dauphin = new Animal("Flipper", "Dauphin", "Mammifère", 4); // Nous créeons un Dauphin avec notre constructeur
+// Exercice : afficher toutes les valeurs des propriétés et changer l'age de dauphin.
 
 
 
