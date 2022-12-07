@@ -746,12 +746,82 @@ let monSuperTableau = [
 
     document.write("<br>");
 
-let max = monSuperTableau.length; // nosu stockons le nombre d'index dans une variable
+let max = monSuperTableau.length; // nous stockons le nombre d'index dans une variable
 
 for(let i = 0; i < max; i++)
 {
     document.write(monSuperTableau[i] + "-----");
 }
+
+// Autre manière de déclarer un tableau:
+let monAutreTableau = Array('Edward', 'Noemie', 745);
+let encoreUnAUtreTableau = new Array('Pile', 'Face');
+
+document.write("<br>");
+
+// Tableau multidimentionnel
+let deuxDimensions = [['fraises', 'pommes', 'bananes'], ['tomates', 'carottes', 'courgettes']];
+document.write(deuxDimensions[0][2]); //affiche bananes
+document.write("<br>");
+let deuxDimensionsBis = [
+    [
+        "Chocolat",
+        "Vanille",
+        "Noisette",
+        [
+            'Crème',
+            "Framboise"
+        ],
+        false
+    ],
+    [
+        "Citron",
+        "Caramel",
+        "Nutella",
+        456,
+        true
+    ]   
+]
+document.write(deuxDimensionsBis[0][3][1]); // affiche Framboise
+
+document.write("<br>");
+
+// Comme le type Array (Tableau) est en réalité un objet et que chaque index est en fait une propriété,
+// nous avons la possibilté d'utiliser la syntaxe des objet pour afficher le contenu du tableau ou le parcourir
+
+let monDernierTableau = ['Batman', 'Superman', 'Wonder Woman'];
+
+// On pourra utiliser la boucle FOR IN ou FOREACH
+
+// La Boucle FOR IN (utilisée pour les objets)
+// Boucle qui permet de réaliser du code sur chaque élément d'in objet qui seront discriminés par une propriété
+// dans un tableau cette propriété est l'index
+for(let index in monDernierTableau){
+    document.write(monDernierTableau[index] + ", <br>");
+}
+
+// La Boucle ForEach (spécifique au tableau)
+// Boucle qui permet de réaliser du code sur chaque élément d'un tableau
+monDernierTableau.forEach(element => document.writeln(element));
+
+// Il existe des tableaux où les index numériques sont remplacés par des mots, on les appelle des tableaux associatifs,
+// ceux sont en fait des objets qu'on utilise comme des tableaux, dans ce cas certaines fonctionnalités ne marchent plus (ex : lenght);
+
+
+// ------------------------------------------------------------------------------------------------------------
+// -- 14 -- Les Objets
+// ------------------------------------------------------------------------------------------------------------
+document.write("<h2>Les Objets</h2>");
+
+
+
+
+
+
+
+
+
+
 
 
 
