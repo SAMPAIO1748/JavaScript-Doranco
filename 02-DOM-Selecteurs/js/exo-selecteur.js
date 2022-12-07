@@ -6,9 +6,9 @@
 
     - Afficher le contenu du premier paragraphe (2 méthodes différentes)
 
-    - Afficher le contenu du span (2 méthodes différentes)
+    - Afficher le contenu du 1er span (2 méthodes différentes)
 
-    -Modifier le contenu du h1.
+    - Modifier le contenu du h1.
 
     - Afficher la liste des contenus de tous les p.
 
