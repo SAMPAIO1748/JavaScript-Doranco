@@ -936,6 +936,13 @@ function Animal(nom, espece, categorie, age){// un constructeur a TOUJOURS sa pr
         this.age = nouvelAge;
         return this.age;
     }
+    this.celebre = {
+        nom : "Flipper",
+        prenom : "Machin",
+        fct : function(){
+            this.nom = "Flipper 2"; // this c'est référence à l'objet parent direct: ici celebre
+        }
+    }
 }
 
 let dauphin = new Animal("Flipper", "Dauphin", "Mammifère", 4); // Nous créeons un Dauphin avec notre constructeur
@@ -950,6 +957,9 @@ dauphin.changeAge(17);
 document.write(dauphin.age + "<br>");
 dauphin.nom = "Flip";
 document.write(dauphin.nom + "<br>");
+
+
+// Le "this" réfère toujours à l'objet parent direct.
 
 
 
