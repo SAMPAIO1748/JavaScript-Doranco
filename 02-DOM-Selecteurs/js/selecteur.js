@@ -54,3 +54,34 @@ let voiture = document.querySelector(".voiture");
 // le querySelector récupère le prmeier élement qui a une classe = "voiture"
 console.log("querSelector : " + voiture.innerHTML);
 // Les sélecteurs sont les mêmes que pour CSS : . : classe, # : id
+
+// ------------------------- SELECTION QUERYSELECTORALL -------------------------------------
+
+let pAll = document.querySelectorAll("p");
+console.log(pAll);
+// querySelectorAll renvoie tous les éléments qui ont la balise p
+// il renvoie la réponse sous forme de NodeList (qui ressemble beaucoup à un tableau).
+console.log("querySelector : " + pAll[0].innerHTML);
+console.log("querySelector : " + pAll[1].innerHTML);
+console.log("querySelector : " + pAll[4].innerHTML);
+let voituresAll = document.querySelectorAll(".voiture");
+// querySelectorAll renvoie tous les éléments qui ont la classe = "voiture"
+// il renvoie le résultat sous forme de NodeList (qui ressemeble à un tableau)
+console.log(voituresAll);
+console.log("querySelector : " + voituresAll[2].innerHTML);
+
+// --------------------------- RESUME DES SELECTEURS --------------------------
+
+/* 
+    id : selecteur naturel via un id.
+    getElementById() : recherche un élément qui aura l'id demandé entre parenthèses
+    getElementsByTagName() : recherche tous les éléments qui ont pour balise
+    la balise sélectionnée entre parenthèses
+    getElementsByClassName : recherche tous les élements qui ont pour classe
+    la classe sélectionnée entre parenthèses
+    querySelector : retourne le premier élement qui satisfait le sélecteur demandé
+    (les sélecteur utilisent le même syntaxe de CSS : #id, .classe, balise)
+    querySelectorAll : retourne tous les éléments qui satisfont le selecteur
+    demandé (les sélecteurs sont les mêmes que pour querySelector).
+
+*/
