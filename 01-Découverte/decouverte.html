@@ -813,8 +813,37 @@ monDernierTableau.forEach(element => document.writeln(element));
 // ------------------------------------------------------------------------------------------------------------
 document.write("<h2>Les Objets</h2>");
 
+let monObjet = {}; // Création de la manière appelée OBJECT LITERAL NOTATION
+monObjet.sonPrenom = "Tommy"; // remplissage de monObjet
+// console.log(monObjet);
+monObjet['sonNom'] = "Legend" // autre manière de remplir monObjet
+console.log(monObjet);
 
+let monAutreObjet = new Object(); // autre manière de créer un objet appelée CONSTRUCTOR
+monAutreObjet.hisFirstname = "Jason"; // remplissage
+monAutreObjet.hisName = "Todd"; // remplissage
+console.log(monAutreObjet);
 
+document.write(monObjet.sonPrenom + "<br>"); // affiche Tommy
+document.write(monObjet['sonNom']); // affiche Legend
+
+let songoku = {
+    nom : "Son",
+    prenom : 'Goku',
+    age : 45 // pas de point virgule (ni de virgule pour la dernière propriété)
+};
+
+// Exercice rajouter une propriété femme qui aura pour valeur "Chichi"
+// afficher cette propriété.
+
+// Remplissage
+songoku.femme = "Chichi";
+document.write(songoku.femme + "<br>");// affiche Chichi
+
+songoku.enfant = ["Gohan", "Goten"]; // la propriété enfant est de type Array (Tableau)
+document.write(songoku.enfant[0]); // affiche Gohan
+
+console.log(songoku);
 
 
 
