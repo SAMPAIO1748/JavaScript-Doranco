@@ -841,9 +841,58 @@ songoku.femme = "Chichi";
 document.write(songoku.femme + "<br>");// affiche Chichi
 
 songoku.enfant = ["Gohan", "Goten"]; // la propriété enfant est de type Array (Tableau)
-document.write(songoku.enfant[0]); // affiche Gohan
+document.write(songoku.enfant[0] + "<br>"); // affiche Gohan
 
 console.log(songoku);
+
+
+let maVoiture = { // je créée et je remplie mon objet
+    marque : "Audi", // propriété de type string
+    modele : "RSQ8",
+    couleur : "Rouge",
+    changeDeCouleur : function (nouvelleCouleur) { // fonction de mon objet qui va permettre de changer de couleur
+                            return this.couleur = nouvelleCouleur; 
+                        // le mot clé this veut dire lui même (il fait donc référence à l'objet dans lequel on se trouve)
+                    },
+    optionsDeSerie : ['climatisation', 'autoradio', "park-assist", 'cuir'], // propriété de type "array" (tableau)
+    annee : 2018, // propriété de type number
+    toitOuvrant : true, // propriété de type boolean
+    infos : function () {// fonction
+            let marqueFonction = this.marque,
+                modeleFonction = this.modele,
+                couleurFonction = this.couleur,
+                optionsDeSerieFonction = this.optionsDeSerie,
+                anneeFonction = this.annee,
+                toitOuvrantFonction = this.toitOuvrant;
+
+                if(toitOuvrantFonction === true){
+                    toitOuvrantFonction = "Toit ouvrant installé";
+                }else{
+                    toitOuvrantFonction = "Pas de toit Ouvrant";
+                }
+            
+
+            document.write("Les informations de ma voiture sont : <br>");
+            document.write(
+                
+                "Marque : " + marqueFonction + "<br>" +
+                "Modele : " + modeleFonction + "<br>" +
+                "Couleur : " + couleurFonction + "<br>" +
+                "Année : " + anneeFonction + "<br>" +
+                "Options de série : " + optionsDeSerieFonction + "<br>" +
+                "Toit ouvrant : " + toitOuvrantFonction + "<br>"
+            
+            );
+         
+    },
+    motorisation : { // propriété de type objet
+        energie : "essence",
+        puissance : "600 cv",
+        hybridation : false
+    }
+}
+
+maVoiture.infos();
 
 
 
