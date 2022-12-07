@@ -959,11 +959,34 @@ dauphin.nom = "Flip";
 document.write(dauphin.nom + "<br>");
 
 
-// Le "this" réfère toujours à l'objet parent direct.
+// Conclusion : Le "this" réfère toujours à l'objet parent direct.
 
+// ------------------------------------------------------------------------------------------------------------
+// -- 16 -- PROTOTYPAGE
+// ------------------------------------------------------------------------------------------------------------
+document.write("<h2>Le prototypage</h2>");
 
+/*
+    Le prototypage consiste à ajouter une propriété ou une méthode à notre constructeur,
+    ainsi tous les objets issus de ce constructeur se verront attribuer ce qu'on a assigné dans le prototype.
 
+*/ 
 
+function Voiture(marque){// constructeur
+    this.marque = marque;
+}
+
+let megane = new Voiture("Renault");
+console.log(megane);
+megane.demarrer = function () {
+    return alert('Vroom !');
+};
+megane.demarrer(); // affiche Vroom !
+console.log(megane);
+
+let m6 = new Voiture('BMW');
+console.log(m6);
+console.log(m6.demarrer); // undefined car démarrer n'appartient qu'à megane
 
 
 
