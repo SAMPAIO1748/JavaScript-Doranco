@@ -117,3 +117,13 @@ document
         .setAttribute("data-image", "image1");
     }
   });
+
+//Mousedown
+document.getElementById("div3").addEventListener("mousedown", function () {
+  this.style.backgroundColor = "red";
+});
+
+// Mouseup
+document.getElementById("div3").addEventListener("mouseup", function () {
+  this.style.backgroundColor = "darkorchid";
+});
