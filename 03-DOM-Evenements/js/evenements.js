@@ -7,6 +7,9 @@
  *
  * elementSelectionne.addEventListener("nom_de_l_evenement", code qui doit se faire (sous forme de focntion))
  *
+ *  Liste de tous les events :
+ * https://developer.mozilla.org/fr/docs/Web/Events
+ *
  */
 
 // -------------------- Evenement sur les div --------------------------------------------
