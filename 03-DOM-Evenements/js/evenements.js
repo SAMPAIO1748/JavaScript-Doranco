@@ -42,6 +42,13 @@ document.getElementById("div7").addEventListener("blur", function () {
   this.style.backgroundColor = "white";
 });
 
+document.getElementById("div8").addEventListener("submit", function (event) {
+  // en paramètre de la fonction, on met l'évènement activé ce qui permet d'agir
+  // sur cet évènement (par exemple : stoper le processus habituel de l'évènement avec preventDefault)
+  event.preventDefault();
+  alert("Div8 - Submit");
+});
+
 // -------------------- Fonction de test -------------------------------------------------
 function div1() {
   alert("div1 - clic div1");
