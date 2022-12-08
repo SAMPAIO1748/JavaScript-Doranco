@@ -30,6 +30,18 @@ document.getElementById("div4").addEventListener("mouseout", div4);
 
 document.getElementById("div5").addEventListener("mousedown", div5);
 
+document.getElementById("div6").addEventListener("blur", div6);
+// blur est l'événement où l'on quitte le focus d'un input
+
+document.getElementById("div7").addEventListener("focus", function () {
+  this.style.backgroundColor = "grey";
+  // this fait référence à l'élément sélectionné par getElementById et qui subit l'évènement.
+});
+
+document.getElementById("div7").addEventListener("blur", function () {
+  this.style.backgroundColor = "white";
+});
+
 // -------------------- Fonction de test -------------------------------------------------
 function div1() {
   alert("div1 - clic div1");
@@ -40,11 +52,15 @@ function div3() {
 }
 
 function div4() {
-  alert("div4 - mouseout");
+  document.getElementById("div4").style.backgroundColor = "darkgrey";
 }
 
 function div5() {
   document.getElementById("div5").style.backgroundColor = "orange";
+}
+
+function div6() {
+  alert("Blur - je quitte le focus");
 }
 
 // exercice : lorsque que la souris quitte div3 alors le background devient bleu.
