@@ -56,11 +56,13 @@ console.log(listeImage);
 document
   .getElementById("blocImage1")
   .addEventListener("mouseenter", function () {
+    listeImage[0].style.top = "0px";
     listeImage[1].style.top = "0px";
   });
 
 document
   .getElementById("blocImage1")
   .addEventListener("mouseleave", function () {
+    listeImage[0].style.top = "-360px";
     listeImage[1].style.top = "-360px";
   });
