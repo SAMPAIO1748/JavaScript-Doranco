@@ -18,3 +18,13 @@ document.getElementById("div1").addEventListener("click", function () {
     this.style.height = "100px";
   }
 });
+
+// Exercice : Event Double Click
+/*
+
+    Lorsque je double clique sur le carré il se décale vers la droite.
+    Ensuite je double clique à nouveau, il se décale vers le bas.
+    Puis si je clique encore un fois, il se décale vers la gauche.
+    Enfin, lorsque l'on clique un dernière fois il se décale vers le haut reprenat sa place d'origine.
+
+*/
