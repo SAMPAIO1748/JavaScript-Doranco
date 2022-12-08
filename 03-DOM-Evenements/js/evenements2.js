@@ -47,3 +47,20 @@ document.getElementById("div2").addEventListener("dblclick", function () {
     this.style.top = "0px";
   }
 });
+
+// Event Mousenter & Mouseleave
+
+let listeImage = document.querySelectorAll("#blocImage1 img");
+console.log(listeImage);
+
+document
+  .getElementById("blocImage1")
+  .addEventListener("mouseenter", function () {
+    listeImage[1].style.top = "0px";
+  });
+
+document
+  .getElementById("blocImage1")
+  .addEventListener("mouseleave", function () {
+    listeImage[1].style.top = "-360px";
+  });
