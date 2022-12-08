@@ -1,0 +1,70 @@
+*{
+    transition: all 1s ease;
+    font-family: sans-serif;
+}
+.conteneur{
+    width: 1000px;
+    margin: 0 auto;
+    border: 1px solid #dedede;
+    padding: 20px;
+}
+.div{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    margin: 50px;
+}
+
+img{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#blocImage1 {
+    width: 640px;
+    height: 360px;
+    overflow: hidden;
+}
+#blocImage1 img {
+    width: 640px;
+    height: 360px;
+}
+#blocImage1 img:nth-child(2){
+    margin-top: -4px;
+    top: -360px;
+}
+
+#blocImage2{
+    position : relative;
+    width: 640px;
+    height: 360px;
+}
+
+#blocImage2 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 640px;
+    height: 360px;
+    opacity: 0;
+    transition: all 1.5s ease;
+}
+
+#changerImage{
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: indigo;
+    color: white;
+    text-decoration: none;
+}
+
+input, select{
+    width: 350px;
+    height: 30px;
+    border: 1px solid lightslategray;
+    padding-left: 5px;
+}
