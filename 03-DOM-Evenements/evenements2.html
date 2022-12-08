@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/evenements2.css">
+</head>
+<body>
+
+    <div class="conteneur">
+
+        <div class="div" id="div1" style="background-color: cornflowerblue ;"></div>
+
+        <hr>
+
+        <div class="div" id="div2" style="background-color: indigo; top : 0; left: 0"></div>
+
+        <hr>
+
+        <div id="blocImage1">
+            <img src="img/image1.jpg" alt="une image de paysage">
+            <img src="img/image2.jpg" alt="une image de paysage">
+        </div>
+
+        <hr>
+
+        <div id="blocImage2" data-image="image1">
+            <img src="img/image1.jpg" alt="une image de paysage" id="image1" style="opacity: 1;">
+            <img src="img/image2.jpg" alt="une image de paysage" id="image2">
+            <img src="img/image3.jpg" alt="une image de paysage" id="image3">
+            <img src="img/image4.jpg" alt="une image de paysage" id="image4">
+            <img src="img/image5.jpg" alt="une image de paysage" id="image5">
+        </div>
+        <a href="" id="changerImage" >Changer d'image</a>
+
+        <hr>
+
+        <div class="div" id="div3" style="background-color: darkorchid;" ></div>
+
+        <hr>
+
+        <div id="message"></div>
+        <form action="" method="post" id="monForm">
+            <input type="text" name="pseudo" id="pseudo" placeholder="Pseudo" value="">
+            <br>
+            <br>
+            <input type="text" name="email" id="email" placeholder="Email">
+            <br>
+            <br>
+            <label>Ville</label>
+            <select name="choix" id="choix">
+                <option value=""></option>
+                <option value="">Paris</option>
+                <option value="">Lille</option>
+                <option value="">Montpellier</option>
+                <option value="">Lyon</option>
+                <option value="">Marseille</option>
+                <option value="">Orléans</option>
+                <option value="">Nice</option>
+            </select>
+            <br>
+            <button type="submit" id="boutonForm" class="bouton">Valider</button>
+
+        </form>
+
+    </div>
+    
+</body>
+</html>
