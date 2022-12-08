@@ -66,3 +66,54 @@ document
     listeImage[0].style.top = "-360px";
     listeImage[1].style.top = "-360px";
   });
+
+// Carousel
+
+document
+  .getElementById("changerImage")
+  .addEventListener("click", function (event) {
+    // l'argument dans le fonction permet de récupérer cet évènement.
+    event.preventDefault();
+    // preventDefault() permet de stopper la procédure habituelle de l'évènement.
+
+    let imageEnCours = document
+      .getElementById("blocImage2")
+      .getAttribute("data-image");
+    console.log(imageEnCours);
+
+    // Exercie : trouver le moyen de modifier l'opcatité de l'image en cours à 0 et l'opacité
+    // de l'image suivant à 1 et modifier data-image par l'image qui viendra après pour réaliser le
+    // carousel
+
+    if (imageEnCours == "image1") {
+      document.getElementById("image1").style.opacity = 0;
+      document.getElementById("image2").style.opacity = 1;
+      document
+        .getElementById("blocImage2")
+        .setAttribute("data-image", "image2");
+    } else if (imageEnCours == "image2") {
+      document.getElementById("image2").style.opacity = 0;
+      document.getElementById("image3").style.opacity = 1;
+      document
+        .getElementById("blocImage2")
+        .setAttribute("data-image", "image3");
+    } else if (imageEnCours == "image3") {
+      document.getElementById("image3").style.opacity = 0;
+      document.getElementById("image4").style.opacity = 1;
+      document
+        .getElementById("blocImage2")
+        .setAttribute("data-image", "image4");
+    } else if (imageEnCours == "image4") {
+      document.getElementById("image4").style.opacity = 0;
+      document.getElementById("image5").style.opacity = 1;
+      document
+        .getElementById("blocImage2")
+        .setAttribute("data-image", "image5");
+    } else {
+      document.getElementById("image5").style.opacity = 0;
+      document.getElementById("image1").style.opacity = 1;
+      document
+        .getElementById("blocImage2")
+        .setAttribute("data-image", "image1");
+    }
+  });
