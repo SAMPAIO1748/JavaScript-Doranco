@@ -28,3 +28,22 @@ document.getElementById("div1").addEventListener("click", function () {
     Enfin, lorsque l'on clique un dernière fois il se décale vers le haut reprenat sa place d'origine.
 
 */
+
+// Event double click :
+
+document.getElementById("div2").addEventListener("dblclick", function () {
+  let divTop = this.style.top;
+  console.log(divTop);
+  let divLeft = this.style.left;
+  console.log(divLeft);
+
+  if (divTop == "0px" && divLeft == "0px") {
+    this.style.left = "100px";
+  } else if (divTop == "0px" && divLeft == "100px") {
+    this.style.top = "100px";
+  } else if (divTop == "100px" && divLeft == "100px") {
+    this.style.left = "0px";
+  } else {
+    this.style.top = "0px";
+  }
+});
