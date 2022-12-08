@@ -15,7 +15,36 @@
 // -------------------- Evenement sur les div --------------------------------------------
 document.getElementById("div1").addEventListener("click", div1);
 
+let div2 = document.getElementById("div2");
+div2.addEventListener("dblclick", function () {
+  alert("div2 - double click");
+});
+
+document.getElementById("div3").addEventListener("mouseover", div3);
+
+document.getElementById("div3").addEventListener("mouseleave", function () {
+  document.getElementById("div3").style.backgroundColor = "blue";
+});
+
+document.getElementById("div4").addEventListener("mouseout", div4);
+
+document.getElementById("div5").addEventListener("mousedown", div5);
+
 // -------------------- Fonction de test -------------------------------------------------
 function div1() {
   alert("div1 - clic div1");
 }
+
+function div3() {
+  document.getElementById("div3").style.backgroundColor = "green";
+}
+
+function div4() {
+  alert("div4 - mouseout");
+}
+
+function div5() {
+  document.getElementById("div5").style.backgroundColor = "orange";
+}
+
+// exercice : lorsque que la souris quitte div3 alors le background devient bleu.
