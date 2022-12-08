@@ -127,3 +127,11 @@ document.getElementById("div3").addEventListener("mousedown", function () {
 document.getElementById("div3").addEventListener("mouseup", function () {
   this.style.backgroundColor = "darkorchid";
 });
+
+// Exercice pour demain :
+/*
+LORS DU FOCUS DES INPUT transformer les bordures en noir mettre un épaisseur 3px
+
+A l'inverse lors du blur, retrouver l'apparence d'origine.
+
+*/
