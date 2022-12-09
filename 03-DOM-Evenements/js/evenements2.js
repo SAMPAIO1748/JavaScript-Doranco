@@ -130,8 +130,35 @@ document.getElementById("div3").addEventListener("mouseup", function () {
 
 // Exercice pour demain :
 /*
-LORS DU FOCUS DES INPUT transformer les bordures en noir mettre un épaisseur 3px
+LORS DU FOCUS DES INPUT transformer les bordures en noir mettre une épaisseur 3px
 
 A l'inverse lors du blur, retrouver l'apparence d'origine.
 
 */
+
+// FOCUS
+
+// Pour l'input pseudo
+/*document.getElementById("pseudo").addEventListener("focus", function () {
+  this.style.border = "black 5px solid";
+});
+
+// Pour l'input email
+document.getElementById("email").addEventListener("focus", function () {
+  this.style.border = "black 5px solid";
+});*/
+
+// Pour le select choix
+document.getElementById("choix").addEventListener("focus", function () {
+  this.style.border = "black 5px solid";
+});
+
+// deuxième méthode juste pour les input :
+let mesInputs = document.querySelectorAll("input");
+console.log(mesInputs);
+
+for (let i = 0; i < mesInputs.length; i++) {
+  mesInputs[i].addEventListener("focus", function () {
+    this.style.border = "black 5px solid";
+  });
+}
