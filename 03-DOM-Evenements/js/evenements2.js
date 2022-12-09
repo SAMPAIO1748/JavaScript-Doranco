@@ -176,3 +176,13 @@ for (let i = 0; i < mesInputs.length; i++) {
 document.getElementById("choix").addEventListener("blur", function () {
   this.style.border = "1px solid lightslategray";
 });
+
+document.getElementById("monForm").addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  let pseudoValue = document.getElementById("pseudo").value;
+  // value permet de récupérer la valeur qui est inscrite dans l'input
+  console.log(pseudoValue);
+
+  // Exercice : récupérer la value de email et afficher le pseudo et l'email dans la div "message"
+});
