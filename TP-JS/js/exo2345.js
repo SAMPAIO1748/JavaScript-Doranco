@@ -68,7 +68,7 @@ document.addEventListener("wheel", function (event) {
 
 // Autre écriture pour les évènements
 /*
-    ex avec whell :
+    ex avec wheel :
     document.onWheel = function (){
 
     }
