@@ -46,3 +46,22 @@ bouge.addEventListener("click", function () {
     move1.style.bottom = "0px";
   }
 });
+
+// Déplaceur
+
+let move = document.getElementById("move");
+
+let temoin = true;
+ancienOffset = 0;
+document.addEventListener("wheel", function (event) {
+  event.preventDefault();
+  if (move.offsetLeft <= 500 && temoin) {
+    move.style.left = move.style.left + 100 + "px";
+  } else if (move.offsetLeft >= 100) {
+    move.style.left = move.style.left - 100 + "px";
+    temoin = false;
+  } else {
+    move.style.left = move.style.left + 100 + "px";
+    temoin = true;
+  }
+});
