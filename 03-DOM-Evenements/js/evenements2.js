@@ -185,4 +185,13 @@ document.getElementById("monForm").addEventListener("submit", function (event) {
   console.log(pseudoValue);
 
   // Exercice : récupérer la value de email et afficher le pseudo et l'email dans la div "message"
+
+  let emailValue = document.getElementById("email").value;
+  console.log(emailValue);
+
+  document.getElementById("message").innerHTML =
+    "Bonjour " + pseudoValue + ", votre email est : " + emailValue;
+
+  document.getElementById("pseudo").value = "";
+  document.getElementById("email").value = "";
 });
