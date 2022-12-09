@@ -65,3 +65,17 @@ document.addEventListener("wheel", function (event) {
     temoin = true;
   }
 });
+
+// Autre écriture pour les évènements
+/*
+    ex avec whell :
+    document.onWheel = function (){
+
+    }
+
+    ex avec click :
+    document.getElementById("bouge").onClick = function (){
+
+    }
+
+*/
