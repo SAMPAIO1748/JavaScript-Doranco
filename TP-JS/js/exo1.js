@@ -9,3 +9,7 @@ for (let i = 0; i < links.length; i++) {
     document.querySelector("#big img").setAttribute("src", link);
   });
 }
+
+document.addEventListener("keyup", function (event) {
+  console.log(event);
+});

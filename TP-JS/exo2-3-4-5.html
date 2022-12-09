@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 2 3 4 5 JS</title>
+</head>
+<body>
+
+    <h2>Copieur</h2>
+
+    <div>
+        <label for="texte">Votre texte ici</label>
+        <input type="text" name="" id="texte">
+        <br>
+        <label for="copie">La copie ici</label>
+        <input type="text" name="" id="copie">
+    </div>
+
+    <hr>
+
+    <h2>Tableau de calcul</h2>
+
+    <div>
+        <label for="nombre">Saisissez votre nombre</label>
+        <input type="text" name="" id="nombre">
+        <br>
+        <table>
+            <tr>
+                <th>nombre</th>
+                <th>carré</th>
+                <th>cube</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <hr>
+
+    <h2>Déplacement carré</h2>
+
+    <div>
+        <div class="move" id="move1"></div>
+    </div>
+    <button id="bouge">Bouge</button>
+
+    <hr>
+
+    <fieldset id="field">
+        <h2>Déplaceur</h2>
+
+        <div class="move" id="move"></div>
+
+    </fieldset>
+
+
+    <style>
+        table, td, th {
+            border: 2px solid green;
+            padding: 5px;
+            border-collapse: collapse;
+        }
+        table{
+            width: 420px;
+        }
+        tr{
+            padding: 5px;
+        }
+        input{
+            margin: 10px;
+            width: 200px;
+        }
+        div{
+            width: 700px;
+            margin: 10px auto;
+        }
+        label {
+            display: inline-block;
+            width : 200px;
+        }
+        .move{
+            position: relative;
+            border: 2px solid green;
+            background-color: green;
+            height: 100px;
+            width:  100px;
+            margin: 20px;
+        }
+        h2{
+            margin : 20px 0;
+        }
+        #move1{
+            background-color: blue;
+            border-color: blue;
+        }
+    </style>
+
+
+    <script src="js/exo2345.js
+    "></script>
+</body>
+</html>
