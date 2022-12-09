@@ -25,3 +25,24 @@ saisi.addEventListener("keyup", function () {
     cube.innerHTML = "Tu n'as pas donné un nombre !";
   }
 });
+
+// Déplacement Carré
+
+let bouge = document.getElementById("bouge"),
+  move1 = document.getElementById("move1");
+
+bouge.addEventListener("click", function () {
+  if (
+    (move1.style.left === "0px" || !move1.style.left) &&
+    (move1.style.bottom === "0px" || !move1.style.bottom)
+  ) {
+    move1.style.left = "100px";
+    move1.style.bottom = "0px";
+  } else if (move1.style.left === "100px" && move1.style.bottom === "0px") {
+    move1.style.bottom = "100px";
+  } else if (move1.style.left === "100px" && move1.style.bottom === "100px") {
+    move1.style.left = "0px";
+  } else if (move1.style.left === "0px" && move1.style.bottom === "100px") {
+    move1.style.bottom = "0px";
+  }
+});
