@@ -153,7 +153,7 @@ document.getElementById("choix").addEventListener("focus", function () {
   this.style.border = "black 5px solid";
 });
 
-// deuxième méthode juste pour les input :
+// deuxième méthode juste pour les inputs :
 let mesInputs = document.querySelectorAll("input");
 console.log(mesInputs);
 
@@ -162,3 +162,17 @@ for (let i = 0; i < mesInputs.length; i++) {
     this.style.border = "black 5px solid";
   });
 }
+
+// BLUR
+
+// Pour les inputs :
+for (let i = 0; i < mesInputs.length; i++) {
+  mesInputs[i].addEventListener("blur", function () {
+    this.style.border = "1px solid lightslategray";
+  });
+}
+
+// Pour le select :
+document.getElementById("choix").addEventListener("blur", function () {
+  this.style.border = "1px solid lightslategray";
+});
